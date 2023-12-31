@@ -25,7 +25,7 @@ const paymentStart = () => {
                 if (response.status == "created") {
                     //open payment form
                     let options = {
-                        key: 'rzp_test_bgKFJsFoxd29mf',
+                        key: 'rzp_live_C028k6CLu8gNDF',
                         amount: response.amount,
                         currency: 'INR',
                         name: 'Payment Gateway App Donation',
