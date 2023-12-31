@@ -27,7 +27,7 @@ public class HomeController {
 //		System.out.println("Order Function called");
 		int amount =Integer.parseInt(data.get("amount").toString());
 		
-		RazorpayClient client = new RazorpayClient("rzp_test_bgKFJsFoxd29mf","yuvOXfrjYFyaJ8q8lsPdGsiu");
+		RazorpayClient client = new RazorpayClient("rzp_live_C028k6CLu8gNDF","mdGZ8frEXAjPHZPBKorhW4Ki");
 		//code taken from razorpay site to create order
 		JSONObject orderRequest = new JSONObject();
 		orderRequest.put("amount",amount*100); //amount taken is in paise
