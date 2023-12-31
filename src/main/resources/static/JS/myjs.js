@@ -7,7 +7,7 @@ const paymentStart = () => {
 	        Swal.fire({
 	  icon: "error",
 	  title: "Oops...",
-	  text: "Amount must be Greater than 1",
+	  text: "Amount must be Greater than 1!",
 	  
 	});
         return;
@@ -30,14 +30,14 @@ const paymentStart = () => {
                         currency: 'INR',
                         name: 'Payment Gateway App Donation',
                         description: 'Donation',
-                        image: 'ghjbkj',
+                        
                         order_id:response.id,
                         "handler":function(response)
                         {
-                            console.log(response.razorpay_payment_id)
-                            console.log(response.razorpay_order_id)
-                            console.log(response.razorpay_signature)
-                            console.log('payment successfull')
+                            // console.log(response.razorpay_payment_id)
+                            // console.log(response.razorpay_order_id)
+                            // console.log(response.razorpay_signature)
+                            // console.log('payment successfull')
                             Swal.fire({
                                 position: "top",
                                 icon: "success",
@@ -58,13 +58,13 @@ const paymentStart = () => {
                     };
                     let rzp=new Razorpay(options);
                     rzp.on('payment.failed', function (response){
-                        console.log(response.error.code);
-                        console.log(response.error.description);
-                        console.log(response.error.source);
-                        console.log(response.error.step);
-                        console.log(response.error.reason);
-                        console.log(response.error.metadata.order_id);
-                        console.log(response.error.metadata.payment_id);
+                        // console.log(response.error.code);
+                        // console.log(response.error.description);
+                        // console.log(response.error.source);
+                        // console.log(response.error.step);
+                        // console.log(response.error.reason);
+                        // console.log(response.error.metadata.order_id);
+                        // console.log(response.error.metadata.payment_id);
                        Swal.fire({
 								  icon: "error",
 								  title: "OOPS...",
